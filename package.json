@@ -1,0 +1,19 @@
+{
+  "name": "ai-image-studio",
+  "version": "1.0.0",
+  "description": "A compact AI image generation workspace using Xiaoji OpenAI-compatible image APIs.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
