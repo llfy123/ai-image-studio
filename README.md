@@ -40,3 +40,15 @@ npm run dev
 
 - UI 风格参考：https://img2.ai/zh
 - 接口文档：https://xiaoji.baziapi.site/docs
+
+## 部署到 Render
+
+仓库根目录包含 `render.yaml`，可以在 Render 里用 Blueprint 部署：
+
+1. 打开 Render Dashboard，选择 New Blueprint。
+2. 连接这个 GitHub 仓库。
+3. Render 会识别 `render.yaml` 并创建一个 Node Web Service。
+4. 在提示填写环境变量时，填入 `XIAOJI_API_KEY`。
+5. 部署完成后打开 Render 给出的公网地址。
+
+不要把 `.env` 上传到 GitHub；生产环境密钥只在 Render 的环境变量里配置。
