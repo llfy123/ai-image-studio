@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ai-image-studio
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: XIAOJI_API_KEY
+        sync: false
